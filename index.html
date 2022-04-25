@@ -39,27 +39,35 @@ function imprimeResposta(xml) {
   document.getElementById("resposta").innerHTML = xmlDoc;
 }
 </script>
+<img src="https://serasa.certificadodigital.com.br/wp-content/uploads/2017/04/Leilao-IR_592x240.jpg">
 
+<h1>Escolha o Produto e dê o Lance</h1>
 <h3 id="saida">Enviar ao pressionar o botão</h3>
-<br><br>
+<br>
 <table>
 	<tr>
-	<td class="remetente"><LABEL for="from">Remetente:</LABEL>
+	<td class="remetente"><LABEL for="from">Nome:</LABEL>
 	<td><INPUT Type = "Text" id="from" Name="from" Size="20" MaxLength="50"><BR></INPUT>
 	<tr>
-	<td class="destinatario"><LABEL for="to">Destinatário:</LABEL>
+	<td class="destinatario"><LABEL for="to">Produto Desejado:</LABEL>
 	<td><INPUT Type = "Text" id="to" Name="to" Size="20" MaxLength="50"><BR></INPUT>
 	<tr>
-	<td class="mensagem"><LABEL for="msg">Mensagem:</LABEL>
-	<td><INPUT Type = "Text" id="msg" Name="msg" Size="100" MaxLength="160"><BR></INPUT>
+	<td class="mensagem"><LABEL for="msg">Lance R$:</LABEL>
+	<td><INPUT Type = "number" id="msg" Name="msg" Size="100" MaxLength="160"><BR></INPUT>
 </table>
 
-<button class = "button" type="button" onclick="enviaMsg()">Envia</button>
+<button class = "button" type="button" onclick="enviaMsg()">Enviar</button>
 
 <br><br><br>
 Resposta:
 <br>
 <span id="resposta">---------</span>
+
+<br><br>
+
+<form action="Form3.html">
+<button type="submit">Confirmar</button>
+</form>
 
 </body>
 </html>
